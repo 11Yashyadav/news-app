@@ -19,7 +19,7 @@ A modern news application built with **React** that fetches the latest top headl
 
 ## 📸 Screenshots
 
-## ![Homepage](./assets/homepage.png)
+## ![Homepage](./src/assets/homepage.png)
 
 ## 🧰 Tech Stack
 
