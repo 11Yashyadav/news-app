@@ -1,21 +1,50 @@
 import { useEffect, useState } from "react";
+import NewsItem from "./NewsItem";
 
 const NewsBoard = () => {
-  const [articles, setArticals] = useState([]);
+  const [articles, setArticles] = useState([]);
 
   useEffect(() => {
-    let url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${
-      import.meta.env.VITE_API_KEY
-    }`;
+    const apiKey = import.meta.env.VITE_API_KEY;
+    if (!apiKey) {
+      console.error(
+        "API key is missing! Please define VITE_API_KEY in your .env file."
+      );
+      return;
+    }
+
+    const url = `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`;
+    console.log("Fetching from URL:", url);
+
     fetch(url)
       .then((response) => response.json())
-      .then((data) => setArticals(data.articles));
+      .then((data) => {
+        console.log("Fetched data:", data);
+        if (data.status === "ok") {
+          setArticles(data.articles);
+        } else {
+          console.error("Error fetching articles:", data);
+        }
+      })
+      .catch((err) => console.error("Fetch error:", err));
   }, []);
+
   return (
-    <div>
-      <h2 className="text-center">
+    <div className="container my-4">
+      <h2 className="text-center mb-4">
         Latest <span className="badge bg-danger">News</span>
       </h2>
+      <div className="d-flex flex-wrap gap-4 justify-content-center">
+        {articles.map((news, index) => (
+          <NewsItem
+            key={index}
+            title={news.title}
+            description={news.description}
+            src={news.urlToImage}
+            url={news.url}
+          />
+        ))}
+      </div>
     </div>
   );
 };
