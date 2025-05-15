@@ -2,7 +2,6 @@ Here's a professional and complete `README.md` file for your **News App using Re
 
 ---
 
-````markdown
 # 📰 News App
 
 A modern news application built with **React** that fetches the latest top headlines using the **NewsAPI**. It allows users to browse news by categories such as Technology, Business, Health, Sports, Entertainment, and more.
@@ -18,8 +17,9 @@ A modern news application built with **React** that fetches the latest top headl
 ---
 
 ## 📸 Screenshots
+![image](https://github.com/user-attachments/assets/20bf854e-d273-4303-94ac-f1eeba81ce5d)
 
-## ![Homepage](./public/homepage.png)
+
 
 ## 🧰 Tech Stack
 
@@ -38,7 +38,6 @@ A modern news application built with **React** that fetches the latest top headl
 git clone https://github.com/your-username/news-app.git
 cd news-app
 ```
-````
 
 ### 2. Install dependencies
 
