@@ -1,9 +1,12 @@
 import Navbar from "./Components/Navbar";
+import NewsBoard from "./Components/NewsBoard";
 
-export const App = () => {
+const App = () => {
   return (
-    <div>
+    <>
       <Navbar />
-    </div>
+    </>
   );
 };
+
+export default App;
