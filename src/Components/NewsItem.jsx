@@ -1,6 +1,6 @@
 const NewsItem = ({ title, description, src, url }) => {
   return (
-    <div className="card my-2" style={{ width: "22rem" }}>
+    <div className="card bg-dark text-light my-2" style={{ width: "22rem" }}>
       <img src={src} className="card-img-top" alt="News" />
       <div className="card-body">
         <h5 className="card-title">{title || "No Title Available"}</h5>
