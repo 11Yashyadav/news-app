@@ -6,7 +6,7 @@ const Navbar = () => {
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          News App
+          <span className="badge bg-light text-dark fs-4">News App</span>
         </a>
         <button
           className="navbar-toggler"

@@ -2,7 +2,7 @@ const NewsBoard = () => {
   return (
     <div>
       <h2 className="text-center">
-        Latest<span className=""> News</span>
+        Latest <span className="badge bg-danger">News</span>
       </h2>
     </div>
   );
