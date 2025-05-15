@@ -19,9 +19,7 @@ A modern news application built with **React** that fetches the latest top headl
 
 ## 📸 Screenshots
 
-> _Add screenshots here if you like, or update this section later._
-
----
+## ![Homepage](./assets/homepage.png)
 
 ## 🧰 Tech Stack
 
@@ -103,23 +101,10 @@ src/
 
 Contributions are welcome! Feel free to open issues or submit pull requests to improve the project.
 
----
-
-## 📄 License
-
-This project is licensed under the [MIT License](LICENSE).
+- 🚀 Don't forget to start the project
 
 ---
 
 ## 🧑‍💻 Author
 
-Built with 💻 by \[Your Name]
-
-> Feel free to add this project to your portfolio and improve it further!
-
-```
-
----
-
-Let me know if you'd like a version with screenshots, deployment instructions (e.g., Netlify or Vercel), or a GitHub-specific badge layout.
-```
+Built with 💻 by Yash Yadav
