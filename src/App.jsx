@@ -1,12 +1,14 @@
+// App.jsx
 import { useState } from "react";
 import Navbar from "./Components/Navbar";
 import NewsBoard from "./Components/NewsBoard";
 
 const App = () => {
-  const [category, setCategory] = useState("general");
+  const [category, setCategory] = useState("technology");
+
   return (
     <>
-      <Navbar setCategory={setCategory} />
+      <Navbar setcategory={setCategory} />
       <NewsBoard category={category} />
     </>
   );

@@ -1,7 +1,7 @@
 // Navbar.jsx
 import React from "react";
 
-const Navbar = () => {
+const Navbar = ({ setcategory }) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="container-fluid">
@@ -22,22 +22,12 @@ const Navbar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav">
             <li className="nav-item">
-              <div className="nav-link">Technology</div>
-            </li>
-            <li className="nav-item">
-              <div className="nav-link">Business</div>
-            </li>
-            <li className="nav-item">
-              <div className="nav-link">Health</div>
-            </li>
-            <li className="nav-item">
-              <div className="nav-link">Science</div>
-            </li>
-            <li className="nav-item">
-              <div className="nav-link">Sports</div>
-            </li>
-            <li className="nav-item">
-              <div className="nav-link">Entertainment</div>
+              <div
+                className="nav-link"
+                onClick={() => setcategory("technology")}
+              >
+                Technology
+              </div>
             </li>
           </ul>
         </div>

@@ -27,7 +27,7 @@ const NewsBoard = ({ category }) => {
         }
       })
       .catch((err) => console.error("Fetch error:", err));
-  }, []);
+  }, [category]);
 
   return (
     <div className="container my-4">
