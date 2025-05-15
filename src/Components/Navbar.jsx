@@ -29,6 +29,11 @@ const Navbar = ({ setcategory }) => {
                 Technology
               </div>
             </li>
+            <li className="nav-item">
+              <div className="nav-link" onClick={() => setcategory("business")}>
+                Business
+              </div>
+            </li>
           </ul>
         </div>
       </div>
